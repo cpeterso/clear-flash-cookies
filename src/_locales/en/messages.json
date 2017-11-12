@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Clear Flash Cookies",
+    "description": "Name of the extension and toolbar button tooltip."
+  },
+
+  "extensionDescription": {
+    "message": "Automatically delete Flash cookies (\"Local Shared Objects\") after Firefox exits.",
+    "description": "Description of the extension."
+  }
+}
