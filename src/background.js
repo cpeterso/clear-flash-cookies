@@ -10,9 +10,9 @@ function removePluginData() {
 // not run on browser exit.
 browser.windows.onRemoved.addListener(() => {
     browser.windows.getAll().then(windows => {
-      if (windows.length === 0) {
-          removePluginData();
-      }
+        if (windows.length === 0) {
+            removePluginData();
+        }
     }).catch(error => {
         error(`windows: ${error}`);
     });
