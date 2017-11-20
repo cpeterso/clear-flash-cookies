@@ -14,7 +14,7 @@ browser.windows.onRemoved.addListener(() => {
             removePluginData();
         }
     }).catch(error => {
-        error(`windows: ${error}`);
+        console.error(`windows: ${error}`);
     });
 });
 
