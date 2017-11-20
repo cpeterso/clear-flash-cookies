@@ -2,12 +2,18 @@
 
 function removePluginData() {
     const start = performance.now();
-    browser.browsingData.removePluginData({}).then(() => {
+
+    function logDuration() {
         const end = performance.now();
         const duration = Math.ceil(end - start);
         console.log(`clear-flash-cookies: removePluginData took ${duration} ms`);
+    }
+
+    browser.browsingData.removePluginData({}).then(() => {
+        logDuration();
     }).catch(error => {
-        console.error(`clear-flash-cookies: removePluginData error: ${error}`);
+        logDuration();
+        console.error(`clear-flash-cookies: error! ${error}`);
     });
 }
 
@@ -19,7 +25,7 @@ browser.windows.onRemoved.addListener(() => {
             removePluginData();
         }
     }).catch(error => {
-        console.error(`clear-flash-cookies: windows error: ${error}`);
+        console.error(`clear-flash-cookies: error! ${error}`);
     });
 });
 
