@@ -4,7 +4,7 @@
   "homepage_url": "https://addons.mozilla.org/firefox/addon/clear-flash-cookies/",
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "applications": {
     "gecko": { "id": "clear-flash-cookies@cpeterso.com" }
