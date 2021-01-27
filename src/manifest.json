@@ -1,7 +1,7 @@
 {
   "default_locale": "en",
   "description": "__MSG_extensionDescription__",
-  "homepage_url": "https://addons.mozilla.org/firefox/addon/clear-flash-cookies/",
+  "homepage_url": "https://github.com/cpeterso/clear-flash-cookies/",
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
   "version": "1.0.1",
